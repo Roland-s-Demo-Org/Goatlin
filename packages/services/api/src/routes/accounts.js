@@ -35,7 +35,7 @@ router.put('/accounts/:username/notes/:note', auth, async (req, res, next) => {
 
     try {
         const note = await Note.findOneAndUpdate(
-            {owner: req.params.username, id: req.params.note},
+            {owner: String(req.params.username), id: String(req.params.note)},
             rawNote,
             {new: true, upsert: true}
         );
