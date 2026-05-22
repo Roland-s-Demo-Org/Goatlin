@@ -11,5 +11,8 @@
     "http-errors": "~1.6.2",
     "mongoose": "^5.7.5",
     "morgan": "~1.9.0"
+  },
+  "overrides": {
+    "send@<=0.19.0": "0.19.0"
   }
 }
