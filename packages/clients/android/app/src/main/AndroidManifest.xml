@@ -45,16 +45,17 @@
                 android:value="com.cx.goatlin.LoginActivity" />
         </activity>
 
+        <!-- Security: Providers set to exported="false" to prevent unauthorized external access to sensitive data -->
         <provider
             android:name="com.cx.goatlin.AccountProvider"
             android:authorities="com.cx.goatlin.accounts"
             android:enabled="true"
-            android:exported="true" />
+            android:exported="false" />
         <provider
             android:name="com.cx.goatlin.NotesProvider"
             android:authorities="com.cx.goatlin.notes"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="false"></provider>
     </application>
 
 </manifest>
