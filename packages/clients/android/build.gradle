@@ -19,6 +19,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'https://maven.aikido.io/d31fc8ec94e6da07d30' }
     }
 }
 
